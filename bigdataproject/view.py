@@ -21,7 +21,7 @@ def index(request):
 
     data = {}
     context={}
-    try:
+    if:
         SQL = "SELECT special FROM `bighw3.Speciality.special` WHERE name = input1"
         list2 = pandas_gbq.read_gbq(SQL)
     else: 
