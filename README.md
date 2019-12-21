@@ -13,25 +13,21 @@ Based on initial analysis to find what's so special in a business, we obtained t
 What's so special in the business named " Emerald Chinese Restaurant"?:
 
 ![Emerald Chinese](dimsum.jpg)
-
 This clearly shows that dim sum is the speciality of this restaurant
 
 What's so special in the business named " Fremont Arcade"?:
 
 ![Fremont arcade](pinball.jpg)
-
 This clearly shows that pinball machine is the speciality of this place
 
 Similarly, What's so special at the location "New Market"?:
 
 ![NewMarket](newmarket.jpg)
-
 This shows that Restaurants are the speciality of this location
 
 What's so special at the location "Pittsburgh"?:
 
 ![Pittsburgh](pittsburgh.jpg)
-
 This shows that Spas and Shopping are the specialities of this location
 
 Next we converted the results in form of list of top 5 specialities of a business and of a location and stored it to big query
@@ -42,4 +38,7 @@ Our software architecture uses HTML, CSS, JavaScript for frontend user interface
 A demo of our application looks as below:
 
 This is the Search Page for "What's so special?"
-![Search page](Searchpage.jpg)
+![Search page](Searchpage.png)
+
+On getting an input from user for search queries, the application gives the output of top 5 frequently discussed positive features for a business.
+![Indexpage](Indexpage.png)
