@@ -38,4 +38,4 @@ Our software architecture uses HTML, CSS, JavaScript for frontend user interface
 A demo of our application looks as below:
 
 This is the Search Page for "What's so special?"
-(Searchpage.jpg)
+![Search page](Searchpage.jpg)
