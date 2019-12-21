@@ -32,13 +32,12 @@ This shows that Spas and Shopping are the specialities of this location
 
 Next we converted the results in form of list of top 5 specialities of a business and of a location and stored it to big query
 
-Our software architecture uses HTML, CSS, JavaScript for frontend user interface. We also used Django for our web application development. Behind the scenes, the large public Yelp dataset is stored in Google Cloud Storage and the analytics on the data has been done using PySpark and Python. Our analysis results are stored in Google BigQuery and are queried upon request from SQL queries in our Django application. In each of these softwares, we have used software libraries to ease our development process. For the natural language processing techniques used for Yelp reviews analysis, we used Python NLTK libraries.
-
-
 A demo of our application looks as below:
 
 This is the Search Page for "What's so special?"
 ![Search page](Searchpage.png)
 
-On getting an input from user for search queries, the application gives the output of top 5 frequently discussed positive features for a business.
+On getting an input from user for search queries, the application gives the output of top 5 frequently discussed positive features for a business or location
 ![Indexpage](Indexpage.png)
+
+Our software architecture uses HTML, CSS, JavaScript for frontend user interface. We also used Django for our web application development. Behind the scenes, the large public Yelp dataset is stored in Google Cloud Storage and the analytics on the data has been done using PySpark and Python. Our analysis results are stored in Google BigQuery and are queried upon request from SQL queries in our Django application. In each of these softwares, we have used software libraries to ease our development process. For the natural language processing techniques used for Yelp reviews analysis, we used Python NLTK libraries.
