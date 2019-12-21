@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  background: #000;
+}
+video {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    background: url('/static/videos/businessways.mp4') repeat;
+    background-size: cover;
+    -webkit-transition: 1s opacity;
+          transition: 1s opacity;*/
+}
+.stopfade {
+   opacity: .5;
+}
+
+#polina {
+  font-family: Garamond-Light, Agenda Light, Agenda, Garamond, sans-serif;
+  font-weight:100;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  padding: 2rem;
+  width: 33%;
+  margin:2rem;
+  /*float: right;*/
+  font-size: 1.2rem;
+}
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: .3rem;
+}
+#polina button {
+  display: block;
+  width: 80%;
+  padding: .4rem;
+  border: none;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: .3s background;
+          transition: .3s background;
+}
+#polina button:hover {
+   background: rgba(0,0,0,0.5);
+}
+
+a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background:rgba(0,0,0,0.5);
+  padding: .5rem;
+  -webkit-transition: .6s background;
+          transition: .6s background;
+}
+a:hover{
+  background:rgba(0,0,0,0.9);
+}
+@media screen and (max-width: 500px) {
+  div{width:70%;}
+}
+@media screen and (max-device-width: 800px) {
+  html { background: url(/static/videos/businessways.mp4) #000 repeat center center fixed; }
+  #bgvid { display: none; }
+}
+
+textarea{
+    background: rgba(255, 255, 255, 0.4) no-repeat scroll 16px 16px;
+    width: 350px;
+    /*height: 100px;*/
+    max-height: 400px;
+    border: 1px solid rgba(255,255,255,.6);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    display:block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:18px;
+    color:#fff;
+    padding-left:45px;
+    padding-right:20px;
+    padding-top:12px;
+    margin-bottom:20px;
+    overflow:hidden;
+    overflow-y: scroll;
+}
+
+input.review {
+    background: rgba(255, 255, 255, 0.4) no-repeat scroll 16px 16px;
+    padding-left:45px;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+:-moz-placeholder{
+    color: #fff;
+}
+
+::-moz-placeholder {
+    color: #fff;
+}
+
+:-ms-input-placeholder {
+    color: #fff;
+}
+
+input:focus, textarea:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    -webkit-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    overflow: hidden;
+}
