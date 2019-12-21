@@ -19,11 +19,14 @@ def index(request):
     pandas_gbq.context.credentials = credentials
     pandas_gbq.context.project = "bighw3"
 
-    SQL = "SELECT special FROM `bighw3.Speciality.special` WHERE name = input1"
-    list2 = pandas_gbq.read_gbq(SQL)
-
     data = {}
     context={}
+    try:
+        SQL = "SELECT special FROM `bighw3.Speciality.special` WHERE name = input1"
+        list2 = pandas_gbq.read_gbq(SQL)
+    else: 
+        SQL = "SELECT Specialities FROM `bighw3.Speciality.special2` WHERE name = input1"
+        list2 = pandas_gbq.read_gbq(SQL)
     
     context['content1'] = input1 
     context['data1']= list2
